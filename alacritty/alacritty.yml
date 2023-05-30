@@ -26,10 +26,9 @@ scrolling:
 #============================
 # Bell
 #============================
+# No bell
 bell:
-    animation: Ease
-    color: '0xffffff'
-    duration: 300
+    duration: 0
 
 #============================
 # Cursor
