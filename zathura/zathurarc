@@ -26,3 +26,8 @@ set highlight-color		"#A9B665"
 # ==========================
 set font "Hack Nerd Font, 16"
 set guioptions "v"
+
+# ==========================
+# Keymap
+# ==========================
+unmap q
