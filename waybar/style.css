@@ -29,6 +29,7 @@ window#waybar {
 #window,
 #clock.1,
 #clock.2,
+#backlight,
 #network,
 #battery,
 #pulseaudio {
@@ -86,15 +87,27 @@ window#waybar {
 	color: #32302F;
 }
 
+#backlight {
+	background-color: #3D4220;
+}
+
+.modules-right widget:nth-child(1) #custom-lower-right {
+	color: #3D4220;
+}
+
+.modules-right widget:nth-child(3) #custom-upper-left {
+	color: #3D4220;
+}
+
 #pulseaudio {
 	background-color: #543937;
 }
 
-.modules-right widget:nth-child(1) #custom-lower-right {
+.modules-right widget:nth-child(4) #custom-lower-right {
 	color: #543937;
 }
 
-.modules-right widget:nth-child(3) #custom-upper-left {
+.modules-right widget:nth-child(6) #custom-upper-left {
 	color: #543937;
 }
 
@@ -102,10 +115,10 @@ window#waybar {
 	background-color: #404946;
 }
 
-.modules-right widget:nth-child(4) #custom-lower-right {
+.modules-right widget:nth-child(7) #custom-lower-right {
 	color: #404946;
 }
 
-.modules-right widget:nth-child(6) #custom-upper-left {
+.modules-right widget:nth-child(9) #custom-upper-left {
 	color: #404946;
 }

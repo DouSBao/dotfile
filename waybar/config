@@ -22,6 +22,9 @@
 	],
     "modules-right": [
 		"custom/lower-right",
+		"backlight",
+		"custom/upper-left",
+		"custom/lower-right",
 		"pulseaudio",
 		"custom/upper-left",
 		"custom/lower-right",
@@ -68,6 +71,10 @@
 	"clock#2": {
 		"format": "{:%H:%M}",
 		"tooltip": false
+	},
+	"backlight": {
+		"format": "{icon} {percent}%",
+		"format-icons": ["󱩎", "󱩏", "󱩐", "󱩑", "󱩒", "󱩓", "󱩔", "󱩖", "󰛨"]
 	},
 	"network": {
 		"max-length": 10,
