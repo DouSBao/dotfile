@@ -1,0 +1,111 @@
+* {
+	font-family: Hack Nerd Font;
+	font-size: 20px;
+}
+
+window#waybar {
+	background-color: transparent;
+	color: #D4BE98;
+}
+
+#custom-upper-left,
+#custom-upper-right {
+	color: #252423;
+	font-size: 22px;
+}
+
+#custom-lower-left,
+#custom-lower-right {
+	color: #252423;
+	border-bottom: 3px solid #3C3836;
+}
+
+#custom-gap {
+	color: transparent;
+}
+
+#user,
+#cpu,
+#window,
+#clock.1,
+#clock.2,
+#network,
+#battery,
+#pulseaudio {
+	background-color: #252423;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-bottom: 3px solid #3C3936;
+}
+
+#user {
+	background-color: #252423;
+}
+
+.modules-left widget:nth-child(2) #custom-lower-left {
+	color: #252423;
+}
+
+#cpu {
+	background-color: #574833;
+}
+
+.modules-left widget:nth-child(3) #custom-upper-right {
+	color: #574833;
+}
+
+.modules-left widget:nth-child(5) #custom-lower-left {
+	color: #574833;
+}
+
+#window {
+	background-color: #424A3E;
+}
+
+.modules-left widget:nth-child(6) #custom-upper-right {
+	color: #424A3E;
+}
+
+.modules-left widget:nth-child(8) #custom-lower-left {
+	color: #424A3E;
+}
+
+#clock.1 {
+	background-color: #32302F;
+}
+
+.modules-center widget:nth-child(1) #custom-upper-right {
+	color: #32302F;
+}
+
+#clock.2 {
+	background-color: #32302F;
+}
+
+.modules-center widget:nth-child(5) #custom-upper-left {
+	color: #32302F;
+}
+
+#pulseaudio {
+	background-color: #543937;
+}
+
+.modules-right widget:nth-child(1) #custom-lower-right {
+	color: #543937;
+}
+
+.modules-right widget:nth-child(3) #custom-upper-left {
+	color: #543937;
+}
+
+#battery {
+	background-color: #404946;
+}
+
+.modules-right widget:nth-child(4) #custom-lower-right {
+	color: #404946;
+}
+
+.modules-right widget:nth-child(6) #custom-upper-left {
+	color: #404946;
+}

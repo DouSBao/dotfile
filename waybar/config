@@ -1,0 +1,96 @@
+{
+    "layer": "top",
+	"margin-left": 10,
+	"margin-top": 10,
+	"margin-right": 10,
+    "modules-left": [
+		"user",
+		"custom/lower-left",
+		"custom/upper-right",
+		"cpu",
+		"custom/lower-left",
+		"custom/upper-right",
+		"hyprland/window",
+		"custom/lower-left"
+	],
+    "modules-center": [
+		"custom/upper-right",
+		"clock#1",
+		"custom/gap",
+		"clock#2",
+		"custom/upper-left"
+	],
+    "modules-right": [
+		"custom/lower-right",
+		"pulseaudio",
+		"custom/upper-left",
+		"custom/lower-right",
+		"battery",
+		"custom/upper-left",
+		"custom/lower-right",
+		"network"
+	],
+
+	"custom/lower-left": {
+		"format": "",
+		"tooltip": false
+	},
+	"custom/lower-right": {
+		"format": "",
+		"tooltip": false
+	},
+	"custom/upper-left": {
+		"format": "",
+		"tooltip": false
+	},
+	"custom/upper-right": {
+		"format": "",
+		"tooltip": false
+	},
+	"custom/gap": {
+		"format": " ",
+		"tooltip": false
+	},
+	"user": {
+		"format": "󰣇 {user}",
+	},
+	"cpu": {
+		"format": " {usage}%",
+		"tooltip": false
+	},
+	"hyprland/window": {
+		"max-length": 15
+	},
+	"clock#1": {
+		"format": "{:%a}",
+		"tooltip": false
+	},
+	"clock#2": {
+		"format": "{:%H:%M}",
+		"tooltip": false
+	},
+	"network": {
+		"max-length": 10,
+		"tooltip": false,
+		"format": "{icon} {essid}",
+		"format-disconnected": "󰤮 {ifname}",
+		"format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"]
+	},
+	"battery": {
+		"tooltip": false,
+		"format": "{icon} {capacity}%",
+		"format-icons": { 
+			"default": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
+			"charging": ["󰢟", "󰢜", "󰂆", "󰂇", "󰂈", "󰢝", "󰂉", "󰢞", "󰂊", "󰂋", "󰂅"]
+		}
+	},
+	"pulseaudio": {
+		"tooltip": false,
+		"format": "{icon} {volume}%",
+		"format-muted": "󰖁 Muted",
+		"format-icons": {
+			"headphone": "",
+			"default": ["󰕿", "󰖀", "󰕾"]
+		}
+	}
+}
