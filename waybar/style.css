@@ -11,12 +11,13 @@ window#waybar {
 #custom-upper-left,
 #custom-upper-right {
 	color: #252423;
-	font-size: 22px;
+	font-size: 28px;
 }
 
 #custom-lower-left,
 #custom-lower-right {
 	color: #252423;
+	font-size: 25px;
 	border-bottom: 3px solid #3C3836;
 }
 
