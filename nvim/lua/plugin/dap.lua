@@ -31,11 +31,12 @@ local keymap = vim.keymap.set
 local opt = user.keymap.option
 
 keymap('n', '<F5>', function() dap.continue() end, opt)
+keymap('n', '<F6>', function() dap.terminate() end, opt)
 keymap('n', '<F10>', function() dap.step_over() end, opt)
 keymap('n', '<F11>', function() dap.step_into() end, opt)
 keymap('n', '<F12>', function() dap.step_out() end, opt)
-keymap('n', '<Leader>bb', function() dap.toggle_breakpoint() end, opt)
-keymap('n', '<Leader>lb',
+keymap('n', '<Leader>db', function() dap.toggle_breakpoint() end, opt)
+keymap('n', '<Leader>dl',
 	function()
 		vim.ui.input({ prompt = "Log point message: " },
 			function(input)
@@ -61,29 +62,76 @@ mason_dap.setup({
 	}
 })
 
+-- dapui config
 local ok, dapui = pcall(require, "dapui")
+ok = false
 if ok then
 	dapui.setup()
 
-	dap.listeners.after.event_initialized["dapui_config"] = function()
-		user.lsp.previewable = false
-		dapui.open()
-	end
-
-	dap.listeners.before.event_terminated["dapui_config"] = function()
-		user.lsp.previewable = true
-		dapui.close()
-	end
-
-	dap.listeners.before.event_exited["dapui_config"] = function()
-		user.lsp.previewable = true
-		dapui.close()
-	end
-
-	dap.listeners.before.disconnect["dapui_config"] = function()
-		user.lsp.previewable = true
-		dapui.close()
-	end
+	-- dapui keymap
+	keymap('n', '<Leader>dw', require("dapui").elements.watches.add, opt)
 else
 	vim.notify("'dapui.nvim' not found, UI won't display", "warn", { title = "plugin missing" })
 end
+
+-- dap autocmd
+dap.listeners.after.event_initialized["dapui_config"] = function()
+	vim.api.nvim_exec_autocmds("User", { pattern = "DapStart" })
+end
+
+dap.listeners.before.event_terminated["dapui_config"] = function()
+	vim.api.nvim_exec_autocmds("User", { pattern = "DapStop" })
+end
+
+dap.listeners.before.event_exited["dapui_config"] = function()
+	vim.api.nvim_exec_autocmds("User", { pattern = "DapStop" })
+end
+
+dap.listeners.before.disconnect["dapui_config"] = function()
+	vim.api.nvim_exec_autocmds("User", { pattern = "DapStop" })
+end
+
+autocmd("User", {
+	pattern = "DapStart",
+	group = loadonce,
+	callback = function()
+		user.lsp.previewable = false
+		vim.diagnostic.hide()
+		if ok then
+			dapui.open()
+		end
+	end
+})
+
+autocmd("User", {
+	pattern = "DapStop",
+	group = loadonce,
+	callback = function()
+		user.lsp.previewable = true
+		vim.diagnostic.show()
+		if ok then
+			dapui.close()
+		end
+	end
+})
+
+-- autocmd("FileType", {
+-- 	pattern = "dap-float",
+-- 	group = loadonce,
+-- 	callback = function(env)
+-- 		local wins = vim.api.nvim_list_wins()
+--
+-- 		for _, win in ipairs(wins) do
+-- 			if vim.api.nvim_win_get_buf(win) == env.buf then
+-- 				if vim.api.nvim_win_is_valid(win) then
+-- 					local config = vim.api.nvim_win_get_config(win)
+-- 					config["border"] = user.ui.float.config.border
+-- 					vim.api.nvim_win_set_config(win, config)
+-- 					vim.api.nvim_win_set_option(win, "winblend", user.ui.float.option.winblend)
+-- 					vim.api.nvim_win_set_option(win, "winhighlight", user.ui.float.option.winhighlight)
+-- 				end
+-- 				break
+-- 			end
+-- 		end
+-- 	end
+-- })

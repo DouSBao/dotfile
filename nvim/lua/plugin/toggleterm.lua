@@ -17,7 +17,7 @@ toggleterm.setup({
 	open_mapping = [[<C-\>]],
 	hide_numbers = true,
 	autochdir = true,
-	direction = "vertical",
+	direction = "float",
 	shading_factor = '2',
 	terminal_mappings = false,
 })

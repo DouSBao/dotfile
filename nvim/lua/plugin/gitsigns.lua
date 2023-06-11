@@ -53,6 +53,7 @@ local opt = user.keymap.option
 
 keymap("n", "<Leader>gp", ":Gitsigns preview_hunk_inline<CR>", opt)
 keymap("n", "<Leader>gs", ":Gitsigns stage_hunk<CR>", opt)
+keymap("n", "<Leader>gw", ":Gitsigns stage_buffer<CR>", opt)
 keymap("n", "<Leader>gu", ":Gitsigns undo_stage_hunk<CR>", opt)
 keymap("n", "<Leader>gr", ":Gitsigns reset_hunk<CR>", opt)
 keymap("n", "<Leader>gn", ":Gitsigns next_hunk<CR>", opt)
