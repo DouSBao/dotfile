@@ -4,6 +4,7 @@ local options = {
 	cursorline = true,								-- highlight cursor line
 	mouse = "",										-- disable mouse
 	number = true, 									-- report line number
+	relativenumber = true,							-- easier jump
 	pumheight = 10,									-- shorter popup height
 	pumblend = user.ui.float.option.winblend, 		-- transparent popup
 	tabstop = 4,

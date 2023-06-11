@@ -109,10 +109,10 @@ return packer.startup(function(use)
 	-- telescope
 	use "nvim-telescope/telescope.nvim"
 	use "nvim-telescope/telescope-ui-select.nvim"
-	use { 
-		"nvim-telescope/telescope-fzf-native.nvim", 
+	use {
+		"nvim-telescope/telescope-fzf-native.nvim",
 		run = "cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && \
-			cmake --build build --config Release && cmake --install build --prefix build" 
+			cmake --build build --config Release && cmake --install build --prefix build"
 	}
 
 	-- terminal
@@ -126,8 +126,8 @@ return packer.startup(function(use)
 
 	-- colorscheme
 	use "folke/tokyonight.nvim"
-	use { 
-		"sainnhe/gruvbox-material", 
+	use {
+		"sainnhe/gruvbox-material",
 		config = "vim.cmd('colorscheme gruvbox-material')"
 	}
 
