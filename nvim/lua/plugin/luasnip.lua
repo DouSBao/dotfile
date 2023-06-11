@@ -47,21 +47,3 @@ luasnip.setup({
 		return vim.split(vim.bo.filetype, ".", true)
 	end,
 })
-
-local opt = user.keymap.option
-
-vim.keymap.set({ 'i', 's' }, '<C-j>', 
-	function() 
-		if luasnip.choice_active() then
-			luasnip.change_choice(1)
-		end
-	end,
-opt)
-
-vim.keymap.set({ 'i', 's' }, '<C-k>', 
-	function() 
-		if luasnip.choice_active() then
-			luasnip.change_choice(-1)
-		end
-	end,
-opt)

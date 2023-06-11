@@ -35,16 +35,16 @@ keymap('n', '<F10>', function() dap.step_over() end, opt)
 keymap('n', '<F11>', function() dap.step_into() end, opt)
 keymap('n', '<F12>', function() dap.step_out() end, opt)
 keymap('n', '<Leader>bb', function() dap.toggle_breakpoint() end, opt)
-keymap('n', '<Leader>lb', 
-	function() 
-		vim.ui.input({ prompt = "Log point message: " }, 
-			function(input) 
+keymap('n', '<Leader>lb',
+	function()
+		vim.ui.input({ prompt = "Log point message: " },
+			function(input)
 				if input then
 					dap.set_breakpoint(nil, nil, input)
 				end
 			end
 		)
-	end, 
+	end,
 opt)
 
 -- dap config
