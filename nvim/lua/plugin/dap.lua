@@ -64,7 +64,6 @@ mason_dap.setup({
 
 -- dapui config
 local ok, dapui = pcall(require, "dapui")
-ok = false
 if ok then
 	dapui.setup()
 
