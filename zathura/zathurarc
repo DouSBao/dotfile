@@ -26,8 +26,10 @@ set highlight-color		"#A9B665"
 # ==========================
 set font "Hack Nerd Font, 16"
 set guioptions "v"
+set selection-clipboard clipboard
 
 # ==========================
 # Keymap
 # ==========================
 unmap q
+unmap index q
