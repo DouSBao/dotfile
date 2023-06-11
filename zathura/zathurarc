@@ -1,32 +1,39 @@
 # ==========================
 # Colors
 # ==========================
-set default-bg 			""
-set default-fg 			"#D4BE98"
-set completion-bg 		"#252423"
-set completion-group-bg 	"#252423"
-set completion-highlight-bg	"#E78A4E"
-set completion-fg 		"#D4BE98"
-set completion-group-fg		"#D4BE98"
+set default-bg 					""
+set default-fg 					"#D4BE98"
+set completion-bg 				"#252423"
+set completion-group-bg 		"#252423"
+set completion-highlight-bg		"#E78A4E"
+set completion-fg 				"#D4BE98"
+set completion-group-fg			"#D4BE98"
 set completion-highlight-fg 	"#252423"
-set inputbar-bg 		"#252423"
-set inputbar-fg 		"#D4BE98"
-set notification-bg 		"#D4BE98"
-set notification-fg		"#252423"
-set notification-error-bg	"#EA6962"
-set notification-error-fg	"#D4BE98"
-set notification-warning-bg	"#472322"
-set notification-warning-fg	"#252423"
-set statusbar-bg		"#574833"
-set statusbar-fg 		"#D4BE98"
-set highlight-color		"#A9B665"
+set inputbar-bg 				"#252423"
+set inputbar-fg 				"#D4BE98"
+set notification-bg 			"#D4BE98"
+set notification-fg				"#252423"
+set notification-error-bg		"#EA6962"
+set notification-error-fg		"#D4BE98"
+set notification-warning-bg		"#472322"
+set notification-warning-fg		"#252423"
+set statusbar-bg				"#574833"
+set statusbar-fg		 		"#D4BE98"
+set index-bg                    "#504945"
+set index-fg                    "#ebdbb2"
+set index-active-bg             "#83a598"
+set index-active-fg             "#504945"
+set highlight-color				"#A9B665"
+set recolor-lightcolor          "#32302f"
+set recolor-darkcolor           "#ebdbb2"
+set recolor                     "false"
 
 # ==========================
 # GUI
 # ==========================
-set font "Hack Nerd Font, 16"
-set guioptions "v"
-set selection-clipboard clipboard
+set font						"Hack Nerd Font, 16"
+set guioptions 					"v"
+set selection-clipboard 		"clipboard"
 
 # ==========================
 # Keymap
