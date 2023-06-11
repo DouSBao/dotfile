@@ -26,6 +26,7 @@ compinit
 # Alias
 # =====================================
 alias ll="exa -alrh --icons --group-directories-first --git"
+alias tran="trans -s English -t 简体中文 -I"
 
 # =====================================
 # Plugins
