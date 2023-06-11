@@ -29,6 +29,11 @@ set recolor-darkcolor           "#ebdbb2"
 set recolor                     "false"
 
 # ==========================
+# Options
+# ==========================
+set pages-per-row				"2"
+
+# ==========================
 # GUI
 # ==========================
 set font						"Hack Nerd Font, 16"
