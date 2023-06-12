@@ -11,7 +11,6 @@ local options = {
 	shiftwidth = 4,									-- 4 space per tab
 	wrap = false,									-- no wrap
 	termguicolors = true,							-- enable 24-bit RGB color
-	autochdir = true,								-- auto change pwd
 	smartindent = true,
 	completeopt = "menu,menuone,noselect",			-- :h completeopt
 	swapfile = false, 								-- no swapfile due to CursorHold

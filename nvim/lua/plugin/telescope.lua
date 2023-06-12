@@ -46,7 +46,7 @@ telescope.setup({
 	pickers = {
 		find_files = {
 			hidden = true,
-			search_dirs = {"$HOME/.config", "$PWD"},
+			-- search_dirs = {"$HOME/.config", "$PWD"},
 		}
 	},
 	extensions = {
@@ -70,4 +70,5 @@ telescope.setup({
 })
 
 telescope.load_extension("fzf")
+telescope.load_extension('projects')
 -- telescope.load_extension("ui-select")

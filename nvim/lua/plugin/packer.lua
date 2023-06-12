@@ -125,8 +125,13 @@ return packer.startup(function(use)
 		config = "vim.notify = require('notify')"
 	}
 
-	-- colorscheme
+	-- colorschemes
 	use "folke/tokyonight.nvim"
+	use "rebelot/kanagawa.nvim"
+	use "ellisonleao/gruvbox.nvim"
+	use "jacoborus/tender.vim"
+	use "tomasiser/vim-code-dark"
+	use "sainnhe/edge"
 	use {
 		"sainnhe/gruvbox-material",
 		config = "vim.cmd('colorscheme gruvbox-material')"
@@ -146,6 +151,9 @@ return packer.startup(function(use)
 
 	-- git
 	use "lewis6991/gitsigns.nvim"
+
+	-- packer
+	use "ahmedkhalf/project.nvim"
 
 	if packer_bootstrap() then
 		packer.sync()
