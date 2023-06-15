@@ -30,6 +30,11 @@ alias tran="trans -s English -t 'Chinese (Simplified)' -I"
 alias mail="neomutt"
 
 # =====================================
+# Variable
+# =====================================
+export GPG_TTY=`tty`
+
+# =====================================
 # Plugins
 # =====================================
 source $ZDOTDIR/zsh-autopair/autopair.zsh
