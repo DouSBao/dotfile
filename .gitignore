@@ -3,14 +3,14 @@
 /zsh/.zhistory
 /zsh/.zcompdump
 
-zsh
-zathura
-waybar
-nvim
-hypr
-git
-dunst
-alacritty
+!zsh
+!zathura
+!waybar
+!nvim
+!hypr
+!git
+!dunst
+!alacritty
 
-README.md
-preview.png
+!README.md
+!preview.png
