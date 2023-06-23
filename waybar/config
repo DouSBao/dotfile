@@ -65,12 +65,13 @@
 		"max-length": 15
 	},
 	"clock#1": {
-		"format": "{:%A}",
+		"format": "{:%A} ",
 		"tooltip": false
 	},
 	"clock#2": {
-		"format": "{:%H:%M}",
-		"tooltip": false
+		"format": "{:%T}",
+		"tooltip": false,
+		"interval": 1
 	},
 	"backlight": {
 		"format": "{icon} {percent}%",
