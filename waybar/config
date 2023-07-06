@@ -49,10 +49,6 @@
 		"format": "",
 		"tooltip": false
 	},
-	"custom/gap": {
-		"format": " ",
-		"tooltip": false
-	},
 	"user": {
 		"format": "󰣇 {user}",
 	},
