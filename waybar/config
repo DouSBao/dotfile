@@ -10,17 +10,14 @@
 		"cpu",
 		"custom/lower-left",
 		"custom/upper-right",
+		"clock",
+		"custom/lower-left",
+		"custom/upper-right",
 		"hyprland/window",
 		"custom/lower-left",
 	],
     "modules-center": [
-		"custom/upper-right",
-		"clock#1",
-		"custom/gap",
 		"wlr/workspaces",
-		"custom/gap",
-		"clock#2",
-		"custom/upper-left"
 	],
     "modules-right": [
 		"custom/lower-right",
@@ -66,12 +63,8 @@
 	"hyprland/window": {
 		"max-length": 15
 	},
-	"clock#1": {
-		"format": "{:%A} ",
-		"tooltip": false
-	},
-	"clock#2": {
-		"format": "{:%T}",
+	"clock": {
+		"format": " {:%a %T}",
 		"tooltip": false,
 		"interval": 1
 	},

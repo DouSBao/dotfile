@@ -28,8 +28,7 @@ window#waybar {
 #user,
 #cpu,
 #window,
-#clock.1,
-#clock.2,
+#clock,
 #backlight,
 #network,
 #battery,
@@ -61,24 +60,28 @@ window#waybar {
 	color: #574833;
 }
 
+#clock {
+	background-color: #32361A;
+}
+
+.modules-left widget:nth-child(6) #custom-upper-right {
+	color: #32361A;
+}
+
+.modules-left widget:nth-child(8) #custom-lower-left {
+	color: #32361A;
+}
+
 #window {
 	background-color: #424A3E;
 }
 
-.modules-left widget:nth-child(6) #custom-upper-right {
+.modules-left widget:nth-child(9) #custom-upper-right {
 	color: #424A3E;
 }
 
-.modules-left widget:nth-child(8) #custom-lower-left {
+.modules-left widget:nth-child(11) #custom-lower-left {
 	color: #424A3E;
-}
-
-#clock.1 {
-	background-color: #32361A;
-}
-
-.modules-center widget:nth-child(1) #custom-upper-right {
-	color: #32361A;
 }
 
 #workspaces {
@@ -97,14 +100,6 @@ window#waybar {
 
 #workspaces button.active {
 	opacity: 0.8;
-}
-
-#clock.2 {
-	background-color: #473C29;
-}
-
-.modules-center widget:nth-child(7) #custom-upper-left {
-	color: #473C29;
 }
 
 #backlight {
