@@ -11,13 +11,13 @@ window#waybar {
 #custom-upper-left,
 #custom-upper-right {
 	color: #252423;
-	font-size: 28px;
+	font-size: 30px;
 }
 
 #custom-lower-left,
 #custom-lower-right {
 	color: #252423;
-	font-size: 25px;
+	font-size: 28px;
 	border-bottom: 3px solid #3C3836;
 }
 
@@ -33,7 +33,8 @@ window#waybar {
 #backlight,
 #network,
 #battery,
-#pulseaudio {
+#pulseaudio,
+#workspaces {
 	background-color: #252423;
 	padding-left: 10px;
 	padding-right: 10px;
@@ -73,19 +74,37 @@ window#waybar {
 }
 
 #clock.1 {
-	background-color: #32302F;
+	background-color: #32361A;
 }
 
 .modules-center widget:nth-child(1) #custom-upper-right {
-	color: #32302F;
+	color: #32361A;
+}
+
+#workspaces {
+	background-color: transparent;
+	border-bottom: none;
+	padding: 0px;
+}
+
+#workspaces button {
+	margin-left: 5px;
+	margin-right: 5px;
+	color: #D4BE98;
+	border-bottom: 3px solid #E78A4E;
+	opacity: 0.3;
+}
+
+#workspaces button.active {
+	opacity: 0.8;
 }
 
 #clock.2 {
-	background-color: #32302F;
+	background-color: #473C29;
 }
 
-.modules-center widget:nth-child(5) #custom-upper-left {
-	color: #32302F;
+.modules-center widget:nth-child(7) #custom-upper-left {
+	color: #473C29;
 }
 
 #backlight {
