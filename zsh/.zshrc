@@ -30,6 +30,7 @@ alias tran="trans -s English -t 'Chinese (Simplified)' -I"
 alias mail="neomutt"
 alias blue="bluetoothctl"
 alias cls="clear"
+alias dict="sdcv --color"
 
 # =====================================
 # Variable
