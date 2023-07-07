@@ -60,7 +60,7 @@
 		"max-length": 15
 	},
 	"clock": {
-		"format": " {:%a %T}",
+		"format": "{:%a %T}",
 		"tooltip": false,
 		"interval": 1
 	},
