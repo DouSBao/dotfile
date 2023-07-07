@@ -28,6 +28,7 @@ compinit
 alias ll="exa -alrh --icons --group-directories-first --git"
 alias tran="trans -s English -t 'Chinese (Simplified)' -I"
 alias mail="neomutt"
+alias blue="bluetoothctl"
 
 # =====================================
 # Variable
