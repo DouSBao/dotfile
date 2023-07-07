@@ -37,12 +37,12 @@ window#waybar {
  */
 
 #user {
-	background-color: rgba(0x25, 0x24, 0x23, 0.4);
+	background-color: rgba(0x25, 0x24, 0x23, 0.7);
 	border-bottom: 3px solid #252423;
 }
 
 .modules-left widget:nth-child(2) #custom-lower-left {
-	color: rgba(0x25, 0x24, 0x23, 0.4);
+	color: rgba(0x25, 0x24, 0x23, 0.7);
 	border-bottom: 3px solid #252423;
 }
 
@@ -52,16 +52,16 @@ window#waybar {
  */
 
 #cpu {
-	background-color: rgba(0x57, 0x48, 0x33, 0.4);
+	background-color: rgba(0x57, 0x48, 0x33, 0.7);
 	border-bottom: 3px solid #574833;
 }
 
 .modules-left widget:nth-child(3) #custom-upper-right {
-	color: rgba(0x57, 0x48, 0x33, 0.4);
+	color: rgba(0x57, 0x48, 0x33, 0.7);
 }
 
 .modules-left widget:nth-child(5) #custom-lower-left {
-	color: rgba(0x57, 0x48, 0x33, 0.4);
+	color: rgba(0x57, 0x48, 0x33, 0.7);
 	border-bottom: 3px solid #574833;
 }
 
@@ -71,16 +71,16 @@ window#waybar {
  */
 
 #clock {
-	background-color: rgba(0x3C, 0x1F, 0x1E, 0.4);
+	background-color: rgba(0x3C, 0x1F, 0x1E, 0.7);
 	border-bottom: 3px solid #3C1F1E;
 }
 
 .modules-left widget:nth-child(6) #custom-upper-right {
-	color: rgba(0x3C, 0x1F, 0x1E, 0.4);
+	color: rgba(0x3C, 0x1F, 0x1E, 0.7);
 }
 
 .modules-left widget:nth-child(8) #custom-lower-left {
-	color: rgba(0x3C, 0x1F, 0x1E, 0.4);
+	color: rgba(0x3C, 0x1F, 0x1E, 0.7);
 	border-bottom: 3px solid #3C1F1E;
 }
 
@@ -90,16 +90,16 @@ window#waybar {
  */
 
 #window {
-	background-color: rgba(0x42, 0x4A, 0x3E, 0.4);
+	background-color: rgba(0x42, 0x4A, 0x3E, 0.7);
 	border-bottom: 3px solid #424A3E;
 }
 
 .modules-left widget:nth-child(9) #custom-upper-right {
-	color: rgba(0x42, 0x4A, 0x3E, 0.4);
+	color: rgba(0x42, 0x4A, 0x3E, 0.7);
 }
 
 .modules-left widget:nth-child(11) #custom-lower-left {
-	color: rgba(0x42, 0x4A, 0x3E, 0.4);
+	color: rgba(0x42, 0x4A, 0x3E, 0.7);
 	border-bottom: 3px solid #424A3E;
 }
 
@@ -117,9 +117,10 @@ window#waybar {
 #workspaces button {
 	margin-left: 5px;
 	margin-right: 5px;
+	font-weight: bold;
 	color: #D4BE98;
 	border-bottom: 3px solid #E78A4E;
-	opacity: 0.4;
+	opacity: 0.7;
 }
 
 #workspaces button.active {
@@ -132,17 +133,17 @@ window#waybar {
  */
 
 #backlight {
-	background-color: rgba(0x3D, 0x42, 0x20, 0.4);
+	background-color: rgba(0x3D, 0x42, 0x20, 0.7);
 	border-bottom: 3px solid #3D4220;
 }
 
 .modules-right widget:nth-child(1) #custom-lower-right {
-	color: rgba(0x3D, 0x42, 0x20, 0.4);
+	color: rgba(0x3D, 0x42, 0x20, 0.7);
 	border-bottom: 3px solid #3D4220;
 }
 
 .modules-right widget:nth-child(3) #custom-upper-left {
-	color: rgba(0x3D, 0x42, 0x20, 0.4);
+	color: rgba(0x3D, 0x42, 0x20, 0.7);
 }
 
 /* 
@@ -151,17 +152,17 @@ window#waybar {
  */
 
 #pulseaudio {
-	background-color: rgba(0x54, 0x39, 0x37, 0.4);
+	background-color: rgba(0x54, 0x39, 0x37, 0.7);
 	border-bottom: 3px solid #543937;
 }
 
 .modules-right widget:nth-child(4) #custom-lower-right {
-	color: rgba(0x54, 0x39, 0x37, 0.4);
+	color: rgba(0x54, 0x39, 0x37, 0.7);
 	border-bottom: 3px solid #543937;
 }
 
 .modules-right widget:nth-child(6) #custom-upper-left {
-	color: rgba(0x54, 0x39, 0x37, 0.4);
+	color: rgba(0x54, 0x39, 0x37, 0.7);
 }
 
 /* 
@@ -170,17 +171,17 @@ window#waybar {
  */
 
 #battery {
-	background-color: rgba(0x40, 0x49, 0x46, 0.4);
+	background-color: rgba(0x40, 0x49, 0x46, 0.7);
 	border-bottom: 3px solid #404946;
 }
 
 .modules-right widget:nth-child(7) #custom-lower-right {
-	color: rgba(0x40, 0x49, 0x46, 0.4);
+	color: rgba(0x40, 0x49, 0x46, 0.7);
 	border-bottom: 3px solid #404946;
 }
 
 .modules-right widget:nth-child(9) #custom-upper-left {
-	color: rgba(0x40, 0x49, 0x46, 0.4);
+	color: rgba(0x40, 0x49, 0x46, 0.7);
 }
 
 /* 
@@ -189,11 +190,11 @@ window#waybar {
  */
 
 #network {
-	background-color: rgba(0x25, 0x24, 0x23, 0.4);
+	background-color: rgba(0x25, 0x24, 0x23, 0.7);
 	border-bottom: 3px solid #252423;
 }
 
 .modules-right widget:nth-child(10) #custom-lower-right {
-	color: rgba(0x25, 0x24, 0x23, 0.4);
+	color: rgba(0x25, 0x24, 0x23, 0.7);
 	border-bottom: 3px solid #252423;
 }
