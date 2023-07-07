@@ -322,7 +322,7 @@
 [urgency_normal]
     background = "#98971A"
     foreground = "#282828"
-    timeout = 0
+    timeout = 10
     # Icon for notifications with normal urgency, uncomment to enable
     default_icon = /home/dousbao/.icons/bell.png
 
