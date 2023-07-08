@@ -20,7 +20,7 @@ window#waybar {
 
 #user,
 #cpu,
-#window,
+#mpd,
 #clock,
 #backlight,
 #network,
@@ -86,10 +86,10 @@ window#waybar {
 
 /* 
  * position: left
- * module: window title
+ * module: mpd
  */
 
-#window {
+#mpd {
 	background-color: rgba(0x42, 0x4A, 0x3E, 0.7);
 	border-bottom: 3px solid #424A3E;
 }

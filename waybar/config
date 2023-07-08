@@ -13,7 +13,7 @@
 		"clock",
 		"custom/lower-left",
 		"custom/upper-right",
-		"hyprland/window",
+		"mpd",
 		"custom/lower-left",
 	],
     "modules-center": [
@@ -56,8 +56,21 @@
 		"format": " {usage}%",
 		"tooltip": false
 	},
-	"hyprland/window": {
-		"max-length": 15
+	"mpd": {
+		"timeout": 5,
+		"title-len": 10,
+		"tooltip": false,
+		"format": "{stateIcon} {title} - {elapsedTime:%M:%S}/{totalTime:%M:%S} {singleIcon}",
+		"format-stopped": "󰙧 STOPPED",
+		"format-disconnected": " DISCONNECTED",
+		"single-icons": {
+			"on": "󰑘",
+			"off": "󰑗"
+		},
+		"state-icons": {
+			"paused": "󰐍",
+			"playing": "󰏦"
+		},
 	},
 	"clock": {
 		"format": "{:%a %T}",
