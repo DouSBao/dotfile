@@ -1,0 +1,50 @@
+# ====================================================
+# Basic
+# ====================================================
+# Directory for storing ncmpcpp related files
+ncmpcpp_directory = ~/.config/ncmpcpp
+
+# Music Directory
+mpd_music_dir = ~/music
+
+# Connection
+mpd_host = localhost
+mpd_port = 6600
+mpd_connection_timeout = 5
+
+# ====================================================
+# Apperance
+# ====================================================
+# Visualizer
+visualizer_data_source = /tmp/mpd.fifo
+visualizer_output_name = visualizer_fifo
+visualizer_in_stereo = no
+visualizer_type = spectrum
+visualizer_look = ●▮
+visualizer_fps = 144
+
+# Visualizer spectrum settings
+visualizer_spectrum_smooth_look = no
+
+# Screen settings
+screen_switcher_mode = playlist, visualizer
+startup_screen = playlist
+
+header_visibility = no
+statusbar_visibility = no
+titles_visibility = yes
+
+# Column format
+song_columns_list_format = "(40)[white]{t|f} (25)[default]{a} (30)[default]{b} (4f)[white]{l}"
+
+# Screen-playlist
+playlist_display_mode = classic
+
+# Screen-browser
+browser_display_mode = columns
+
+# ====================================================
+# Other
+# ====================================================
+# No startup message
+connected_message_on_startup = no

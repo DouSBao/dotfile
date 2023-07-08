@@ -31,6 +31,7 @@ alias mail="neomutt"
 alias blue="bluetoothctl"
 alias cls="clear"
 alias dict="sdcv --color"
+alias music="ncmpcpp -q"
 
 # =====================================
 # Variable
