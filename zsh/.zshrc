@@ -27,11 +27,12 @@ compinit
 # =====================================
 alias ll="exa -alrh --icons --group-directories-first --git"
 alias tran="trans -s English -t 'Chinese (Simplified)' -I"
-alias mail="neomutt"
-alias blue="bluetoothctl"
 alias cls="clear"
 alias dict="sdcv --color"
 alias music="ncmpcpp -q"
+alias mail="neomutt"
+alias wifi="nmcli"
+alias blue="bluetoothctl"
 
 # =====================================
 # Variable
