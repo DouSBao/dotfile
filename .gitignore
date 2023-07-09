@@ -2,6 +2,7 @@
 
 /zsh/.zhistory
 /zsh/.zcompdump
+/nvim/plugin
 /hypr/hyprpaper.conf
 
 !zsh
