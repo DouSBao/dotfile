@@ -1,0 +1,49 @@
+# =================================
+# Options
+# =================================
+ignore-empty-password
+daemonize
+
+# =================================
+# Apperance
+# =================================
+# Background
+screenshots
+effect-blur=20x2
+
+# Indicator
+indicator
+indicator-radius=200
+indicator-thickness=0
+
+# Inside
+inside-color=14161764
+inside-clear-color=14161764
+inside-caps-lock-color=14161764
+inside-ver-color=14161764
+inside-wrong-color=14161764
+
+# Line
+line-color=00000000
+line-clear-color=00000000
+line-caps-lock-color=00000000
+line-ver-color=00000000
+line-wrong-color=00000000
+
+# Text
+text-color=D4BE98
+text-clear-color=A9B665
+text-caps-lock-color=D4BE98
+text-ver-color=D8A654
+text-wrong-color=EA6962
+
+# Clock
+clock
+timestr=Locked
+datestr=
+
+# Font
+font=Hack Nerd Font
+
+# Other
+disable-caps-lock-text
