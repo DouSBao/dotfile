@@ -33,6 +33,7 @@ alias music="ncmpcpp -q"
 alias mail="neomutt"
 alias wifi="nmcli"
 alias blue="bluetoothctl"
+alias lock="swaylock"
 
 # =====================================
 # Variable
