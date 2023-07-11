@@ -127,6 +127,14 @@ window#waybar {
 	opacity: 1;
 }
 
+#workspaces button:hover {
+	background: transparent;
+	box-shadow: inherit;
+    text-shadow: inherit;
+	border: none;
+	border-bottom: 3px solid #E78A4E;
+}
+
 /* 
  * position: right
  * module: backlight
